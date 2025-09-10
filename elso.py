@@ -18,4 +18,18 @@ nem_talaldDB = 0
 
 kitalalando_szam = szamok[random.randint(len(szamok))]
 
+tipp = int(input("Tipped?: (egész szám): "))
+
+while(tipp != kitalalando_szam):
+    tipp = int(input("Tipped?: (egész szám): "))
    
+print("Kitalatad a kitalalando szamt!")
+
+folytatás = input("Akarsz-e még jatszani? [I/N]")
+
+if(folytatás == "I"):
+    #??????
+else:
+    exit()
+
+
