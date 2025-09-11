@@ -16,9 +16,28 @@ print(szamok)
 jatek_szam = 0
 nem_talaldDB = 0
 
-kitalalando_szam = szamok[random.randint(len(szamok))]
+kitalalando_szam = szamok[random.randint(0, len(szamok))]
 
-tipp = int(input("Tipped?: (egész szám): "))
+# A JÁTÉK ------------------------------------------
+
+jatszol = True
+
+while(jatszol):
+    tipp = int(input("Tipped?: (egész szám): "))
+
+    while(tipp != kitalalando_szam):
+        tipp = int(input("Tipped?: (egész szám): "))
+   
+    print("Kitalatad a kitalalando szamt!")
+
+    folytatas = input("Akarsz-e még jatszani? [I/N]")
+    if(folytatas == "N"):
+        jatszol = False
+        
+
+
+
+""" tipp = int(input("Tipped?: (egész szám): "))
 
 while(tipp != kitalalando_szam):
     tipp = int(input("Tipped?: (egész szám): "))
@@ -29,7 +48,8 @@ folytatás = input("Akarsz-e még jatszani? [I/N]")
 
 if(folytatás == "I"):
     #??????
+    pass
 else:
-    exit()
+    exit() """
 
 
